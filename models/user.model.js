@@ -1,7 +1,7 @@
-const { Mongoose } = require("mongoose");
+const Mongoose = require("mongoose");
 
-const Schema = mongoose.Schema;
-const ObjectId = Schema.ObjectId;
+const Schema = Mongoose.Schema;
+
 
 const UserSchema = new Schema({
   email: {type:String,required:true, unique:true},
